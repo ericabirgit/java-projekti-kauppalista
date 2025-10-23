@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg: #1b5e20;           /* Tummanvihreä tausta */
+  --card: #d4f5c7;         /* Vaaleanvihreä laatikko */
+  --accent: #4caf50;       /* Vihreä painikeväri */
+  --muted: #5e7d5e;        /* Haalistunut teksti */
+  --error: #c62828;        /* Virheväri */
+  --text: #012604;         /* Vaalea teksti tummalla taustalla */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  margin: 0;
+  padding: 24px;
+  color: var(--text);
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--card);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text);
+  background-color: #f1f8e9;
+}
+
+input.invalid {
+  border-color: var(--error);
+}
+
+.error {
+  color: var(--error);
+  font-size: 14px;
+  width: 100%;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 6px;
+  border-bottom: 1px solid #c8e6c9;
+}
+
+li .text {
+  flex: 1;
+  color: var(--text);
+}
+
+li.completed .text {
+  text-decoration: line-through;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.delete {
+  background: transparent;
+  border: 1px solid var(--error);
+  color: var(--error);
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.delete:hover {
+  background-color: rgba(198, 40, 40, 0.1);
+}
+
+#counter {
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: var(--text);
+}

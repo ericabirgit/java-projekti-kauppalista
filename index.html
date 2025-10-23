@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kauppalista</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Kauppalista</h1>
+
+    <form id="item-form" aria-label="Lisää ostettava tuote">
+      <input id="item-input" type="text" placeholder="Kirjoita tuote..." required />
+      <button type="submit">Lisää</button>
+      <span id="error-message" class="error"></span>
+    </form>
+
+    <p id="counter">Ostamatta: 0</p>
+    <ul id="item-list" aria-live="polite"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
