@@ -1,5 +1,8 @@
 # Kauppalista
 
+Löydät sovelluksen tällä linkillä:
+https://68fa15a62b7827c6e1e922c9--kauppalistaerica.netlify.app/ 
+
 ## Sovellus
 
 Kauppalista on selainpohjainen sovellus, jossa käyttäjä voi lisätä tuotteita ostoslistalle, merkitä ne ostetuiksi ja poistaa listalta. Sovellus tallentaa tiedot selaimen localStorageen, joten lista säilyy myös sivun sulkemisen jälkeen.
